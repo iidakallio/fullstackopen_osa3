@@ -113,4 +113,6 @@ app.post('/api/persons', (request, response) => {
     `)
 })
   
-module.exports = app;
+module.exports = (req, res) => {
+  app(req, res);
+};
